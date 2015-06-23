@@ -7,6 +7,7 @@
     <!-- Bootstrap core CSS -->
 
     <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="import" href="components/myfirstcomponent/my-first-web-component/my-first-web-component.html">
 
     <link href="vendor/docs.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
@@ -61,46 +62,14 @@
                 <h2 id="third-component">Hello Badge</h2>
                 <!-- Component code -->
                 <style type="text/css">
-                                    .nametag{
-                                            width: 100%;
-                                            height: 300px;
-                                            border: 5px solid blue;
-                                            border-radius: 10px;
-                                            background-color: blue;
-                                        }
-                                    .nameheader{
-                                            height: 50px;
-                                            width: 100%;
-                                            padding: 20px 0;
-                                            background-color: blue;
-                                            margin: auto;
-                                            text-align: center;
-                                        }
-                                    .namecontent{
-                                            height: 100px;
-                                            background-color: white;
-                                            margin-bottom: 20px;
-                                    }
-                                    h1, h3 {
-                                        color: white;
-                                    }
+                    thomas-element::shadow h1{
+                        color: pink;
+                    }
                 </style>
-                    <div class="nametag">
-                        <div class="nameheader">
-                            <h1>Hello</h1>
-                            <h3>My name is</h3>
-                            <div class="namecontent"></div>
-                        </div>
-                    </div>
+                <thomas-element></thomas-element>
                 <!-- Component code example -->
                 <div class="highlight"><code class="html">
-                    <div class="nametag">
-                        <div class="nameheader">
-                            <h1>Hello</h1>
-                            <h3>My name is</h3>
-                            <div class="namecontent"></div>
-                        </div>
-                    </div>
+                    <thomas-element></thomas-element>
                 </code></div>
 
             </div>
