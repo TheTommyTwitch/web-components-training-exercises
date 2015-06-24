@@ -1,0 +1,19 @@
+<template id="template">
+    <button>
+        <content></content>
+    </button>
+    <style type="text/css">
+        button{
+            background-color: green;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+    </style>   
+</template>
+<script type="text/javascript">
+    var buttonHost = document.querySelector('.myButton');
+    var shadowRoot = buttonHost.createShadowRoot();
+    var currentScript = document._currentScript ? document.CurrentScript : document.currentScript;
+    var template = currentScript.ownerDocument.getElementById('template').content;
+    shadowRoot.appendChild(document.importNode(template, true));
+</script>
